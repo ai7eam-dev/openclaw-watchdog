@@ -1,0 +1,32 @@
+[openclaw]
+root = "~/.openclaw"
+openclaw_bin = "openclaw"
+
+[watch]
+interval_seconds = 60
+
+[defaults]
+enabled = true
+max_auto_resume = 2
+cooldown_seconds = 120
+nudge_template = "continue"
+require_pending_reply = true
+
+[notify]
+enabled = false
+channel = "telegram"
+target = "<your-target>"
+silent = false
+
+[paths]
+# Optional overrides:
+# state_path = "~/.local/state/openclaw-watchdog/state.json"
+# event_log_path = "~/.local/state/openclaw-watchdog/events.jsonl"
+
+# Per-agent override example:
+# [agents."my-agent"]
+# enabled = true
+# max_auto_resume = 3
+# cooldown_seconds = 180
+# nudge_template = "continue"
+# require_pending_reply = true

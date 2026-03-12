@@ -1,0 +1,2 @@
+{"type":"message","timestamp":"2026-03-12T08:00:00.000Z","message":{"role":"assistant","content":[{"type":"text","text":"Earlier partial progress report."}]}}
+{"type":"message","timestamp":"2026-03-12T08:10:00.000Z","message":{"role":"user","content":[{"type":"text","text":"继续把这件事做完。"}]}}

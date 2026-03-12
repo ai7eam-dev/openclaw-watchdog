@@ -1,0 +1,16 @@
+[Unit]
+Description=OpenClaw Watchdog
+After=default.target
+
+# Example only.
+# Replace WorkingDirectory and PYTHONPATH to match your local clone path.
+[Service]
+Type=simple
+WorkingDirectory=%h/path/to/openclaw-watchdog
+Environment=PYTHONPATH=%h/path/to/openclaw-watchdog/src
+ExecStart=/usr/bin/python3 -m openclaw_watchdog watch
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,16 @@
+[openclaw]
+root = "~/.openclaw"
+openclaw_bin = "openclaw"
+
+[watch]
+interval_seconds = 60
+
+[defaults]
+enabled = true
+max_auto_resume = 2
+cooldown_seconds = 120
+nudge_template = "continue"
+require_pending_reply = true
+
+[notify]
+enabled = false

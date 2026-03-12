@@ -1,0 +1,26 @@
+{
+  "agent:demo-agent:main": {
+    "sessionId": "main-session",
+    "updatedAt": 1773300000000,
+    "systemSent": true,
+    "abortedLastRun": false,
+    "deliveryContext": {
+      "channel": "telegram",
+      "to": "telegram:TEST_TARGET",
+      "accountId": "main"
+    },
+    "sessionFile": "REPLACE_ME/main-session.jsonl"
+  },
+  "agent:demo-agent:cron:test-run-1": {
+    "sessionId": "demo-session",
+    "updatedAt": 1773300000001,
+    "systemSent": true,
+    "abortedLastRun": true,
+    "deliveryContext": {
+      "channel": "telegram",
+      "to": "telegram:TEST_TARGET",
+      "accountId": "main"
+    },
+    "sessionFile": "REPLACE_ME/demo-session.jsonl"
+  }
+}

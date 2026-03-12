@@ -1,0 +1,23 @@
+[openclaw]
+root = "REPLACE_OPENCLAW_ROOT"
+openclaw_bin = "echo"
+
+[watch]
+interval_seconds = 1
+
+[defaults]
+enabled = true
+max_auto_resume = 2
+cooldown_seconds = 0
+nudge_template = "continue"
+require_pending_reply = true
+
+[notify]
+enabled = true
+channel = "telegram"
+target = "TEST_TARGET"
+silent = true
+
+[paths]
+state_path = "REPLACE_STATE_PATH"
+event_log_path = "REPLACE_EVENT_LOG_PATH"
