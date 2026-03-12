@@ -28,7 +28,7 @@ This version already includes:
 ## Install
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/ai7eam-dev/openclaw-watchdog.git
 cd openclaw-watchdog
 chmod +x scripts/install.sh scripts/uninstall.sh
 ./scripts/install.sh
