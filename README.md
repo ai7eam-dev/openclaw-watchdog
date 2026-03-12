@@ -236,6 +236,31 @@ Expected files:
 - `state.json`
 - `events.jsonl`
 
+## Add it to TOOLS.md
+
+If the user keeps a workspace-level `TOOLS.md` cheat sheet for local services, add `openclaw-watchdog` there after installation.
+
+Suggested entry:
+
+```markdown
+### openclaw-watchdog
+
+- Repo: `<local clone path>`
+- systemd user service: `openclaw-watchdog.service`
+- Status check:
+  - `systemctl --user status openclaw-watchdog`
+  - `journalctl --user -u openclaw-watchdog -n 50 --no-pager`
+- Service control:
+  - start: `systemctl --user start openclaw-watchdog`
+  - stop: `systemctl --user stop openclaw-watchdog`
+  - restart: `systemctl --user restart openclaw-watchdog`
+- Runtime files:
+  - `~/.local/state/openclaw-watchdog/state.json`
+  - `~/.local/state/openclaw-watchdog/events.jsonl`
+```
+
+This makes it much easier for future agent sessions to understand how to inspect and operate the service.
+
 ## Recommended: hand this repo to an agent
 
 For most users, the easiest setup path is to give this repository directly to an OpenClaw-capable agent and ask it to install and validate the watchdog for the local machine.

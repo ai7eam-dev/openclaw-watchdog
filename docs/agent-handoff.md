@@ -31,6 +31,8 @@ Usually only `~/.config/openclaw-watchdog/config.toml`:
 
 For notify configuration, treat it as fallback only. The watchdog should prefer alerting the related parent/main agent session before using an external channel.
 
+If the workspace has a local `TOOLS.md` file for operational notes, the agent should also add a short `openclaw-watchdog` entry there after installation so later sessions can inspect and manage the service quickly.
+
 ## Safe validation steps
 
 ```bash
